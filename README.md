@@ -1,20 +1,6 @@
-&lt;!-- -*- markdown -*- --&gt;
-&lt;h1 align="center"&gt;
-  &lt;br&gt;
-  &lt;img src="docs/logo.png" alt="XSS-Hunter" width="120"&gt;
-  &lt;br&gt;
-  XSS-Hunter
-  &lt;br&gt;
-&lt;/h1&gt;
 
-&lt;p align="center"&gt;
-  &lt;a href="[https://github.com/thednato7m/your-xss-finder](https://github.com/Thednato7m/XSS_Finder)/actions"&gt;&lt;img src="https://github.com/thednato7m/your-xss-finder/workflows/CI/badge.svg" alt="CI"&gt;&lt;/a&gt;
-  &lt;img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python"&gt;
-  &lt;img src="https://img.shields.io/badge/licence-MIT-green.svg" alt="Licence"&gt;
-  &lt;img src="https://img.shields.io/github/v/release/thednato7m/your-xss-finder?include_prereleases" alt="Release"&gt;
-&lt;/p&gt;
 
-**XSS-Hunter** is a one-command, open-source scanner that finds **Reflected**, **Stored** and **DOM-based** XSS while automatically riding common **WAF bypasses**.  
+**XSS-Finder** is a one-command, open-source scanner that finds **Reflected**, **Stored** and **DOM-based** XSS while automatically riding common **WAF bypasses**.  
 It uses a headless Chrome instance to confirm real JavaScript execution (`alert(1)` → `window.xss=1`) and minimise false positives.
 
 ---
@@ -58,6 +44,7 @@ Flag	Purpose
 --auth-bearer	JWT / API token
 --json FILE	dump findings to JSON
 --no-dom	skip heavy DOM checks (speed)
+
 🧪 Test your build
 bash
 Copy
@@ -65,12 +52,17 @@ Copy
 pytest -q -s
 
 A disposable vulnerable app is spun up in CI so every push is automatically verified.
+
 🤝 Contributing
+
 Please read CONTRIBUTING.md – we love pull requests, issue reports and feature ideas.
 📜 Licence
+
 MIT – see LICENSE.
+
 ⚠️ Responsible usage
 This tool is for authorised security testing only. Always obtain written permission before scanning any site you do not own.
+
 <div align="center">
   🌟 Star the repo if it helped you – it keeps us motivated! 🌟
 </div>
